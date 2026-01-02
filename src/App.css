@@ -1,0 +1,624 @@
+/* General Styles */
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ebf5f6;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #171515; /* Blue background */
+  color: white;
+  padding: 10px 20px;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav .text-lg {
+  font-size: 22px;
+  color: white;
+}
+
+/* Home Component Styles */
+.home-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.home-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.start-button {
+  background-color: #0d1018;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #2563eb;
+}
+
+/* Enhanced Interview Dashboard Styles */
+
+/* General Layout */
+.p-8 {
+  padding: 32px;
+  background-color: #ebf0f5; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.text-xl {
+  font-size: 24px;
+  color: #1f2937; /* Dark gray */
+}
+
+.font-bold {
+  font-weight: bold;
+  color: rgb(18, 18, 18); /* Medium gray */
+  margin-bottom: 8px;
+}
+
+/* Filter Section */
+
+
+/* Filters Container */
+.filter-container {
+  display: flex;
+  gap: 20px; /* Space between filters */
+  flex-wrap: wrap; /* Wrap filters on small screens */
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Ensures equal width distribution */
+  min-width: 200px; /* Minimum width for each filter */
+}
+
+.filter-item label {
+  font-weight: bold;
+  color: #1f2937;
+}
+
+input {
+  flex: 1;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 4px #2563eb;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.space-y-4 {
+  gap: 16px;
+  display: grid; /* Removed stacking for inline design */
+}
+
+.space-y-4 > div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+label {
+  font-weight: bold;
+  color: #374151; /* Gray */
+  min-width: 150px; /* Ensures labels are aligned */
+}
+
+input {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #111827; /* Blackish */
+  width: 100%;
+  max-width: 300px; /* Constrain input width */
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #3b82f6; /* Blue border on focus */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); /* Blue outline */
+  outline: none;
+}
+
+/* Buttons */
+button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.text-blue-500 {
+  color: #3b82f6; /* Blue */
+}
+
+.text-blue-500:hover {
+  color: #2563eb; /* Darker blue */
+}
+
+.text-red-500 {
+  color: #ef4444; /* Red */
+}
+
+.text-red-500:hover {
+  color: #dc2626; /* Darker red */
+}
+
+/* List Styling */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 16px;
+}
+
+li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Spreads content horizontally */
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 8px;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li span {
+  color: #374151; /* Gray */
+}
+
+
+
+
+/* Calendar Styles */
+.react-big-calendar {
+  border-radius: 8px;
+}
+
+.react-big-calendar .rbc-calendar {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.rbc-toolbar {
+  background-color: #1d4ed8;
+  color: white;
+}
+
+.rbc-toolbar button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.rbc-toolbar button:hover {
+  background-color: #1d4ed8;
+}
+
+/* General Form Container */
+.schedule-meeting-container {
+  background-color: #ffffff; /* Clean white background */
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: 'Arial', sans-serif; /* Clean font */
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Space between form elements */
+}
+
+/* Heading */
+.schedule-meeting-container h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: #1f2937; /* Dark Gray */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Input and Select Fields */
+/* Input, Select, and Other Form Elements */
+.schedule-meeting-container input,
+.schedule-meeting-container select,
+.schedule-meeting-container button {
+  width: 100%; /* Ensure full width for all inputs */
+  padding: 14px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db; /* Light border */
+  border-radius: 6px;
+  background-color: #f9fafb; /* Light gray background */
+  color: #374151; /* Dark gray text */
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus State for Inputs */
+.schedule-meeting-container input:focus,
+.schedule-meeting-container select:focus {
+  border-color: #3b82f6; /* Blue border on focus */
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.5); /* Subtle glow */
+  outline: none;
+}
+
+/* Button */
+.schedule-meeting-container button {
+  background-color: #05f01d; /* Vibrant blue */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button Hover */
+.schedule-meeting-container button:hover {
+  background-color: #1d4ed8; /* Slightly darker blue */
+  transform: translateY(-2px); /* Lift on hover */
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.4); /* Subtle shadow on hover */
+}
+
+/* Button Active */
+.schedule-meeting-container button:active {
+  background-color: #1e40af; /* Dark blue */
+  transform: translateY(0); /* Reset lift */
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3); /* Lower shadow */
+}
+
+/* Labels */
+.schedule-meeting-container label {
+  font-size: 16px;
+  color: #374151; /* Dark gray text */
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 500;
+}
+
+/* Error Messages */
+.schedule-meeting-container .error-message {
+  color: #dc2626; /* Red for errors */
+  font-size: 14px;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+
+/* Success Messages */
+.schedule-meeting-container .success-message {
+  color: #16a34a; /* Green for success */
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .schedule-meeting-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .schedule-meeting-container h2 {
+    font-size: 24px;
+  }
+
+  .schedule-meeting-container input,
+  .schedule-meeting-container select,
+  .schedule-meeting-container button {
+    width: 100%; /* Full width for mobile */
+  }
+}
+
+
+
+/* TimeSlots Component Styles */
+/* TimeSlots Component Styles */
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-gray-50 {
+  background-color: #f9fafb; /* Light gray for a softer background */
+}
+
+.bg-gray-200 {
+  background-color: #e5e7eb; /* Subtle gray for visual interest */
+}
+
+.text-gray-600 {
+  color: #4b5563; /* Dark gray for text for better readability */
+}
+
+.text-lg {
+  font-size: 18px;
+}
+
+.space-y-3 > li {
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.space-y-3 > li:hover {
+  background-color: #e5e7eb; /* Light gray hover effect */
+}
+
+li {
+  border: 1px solid #ddd; /* Light border for the list items */
+}
+
+li:hover {
+  background-color: #e5e7eb; /* Matching hover effect with the background */
+  border-color: #d1d5db; /* Slightly darker gray on hover for the border */
+}
+
+/* Card Component (Time Slots) */
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Clean, bright background */
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle elevation on hover */
+}
+
+/* Common Flexbox Layout */
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.space-x-4 > * {
+  margin-right: 15px;
+}
+
+/* Miscellaneous */
+.shadow {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.border {
+  border: 1px solid #e5e7eb;
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Improved Button Styles */
+button {
+  background-color: #4b5563; /* Dark gray for buttons */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #6b7280; /* Lighter gray for hover effect */
+  transform: translateY(-3px); /* Subtle elevation on hover */
+}
+
+/* Input/Select Styles */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+input:focus,
+select:focus {
+  border-color: #6b7280; /* Darker gray focus border */
+  box-shadow: 0 0 5px rgba(107, 114, 128, 0.4);
+}
+
+/* Card Component (Time Slots) */
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Common Flexbox Layout */
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.space-x-4 > * {
+  margin-right: 15px;
+}
+
+/* Miscellaneous */
+.shadow {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.border {
+  border: 1px solid #e5e7eb;
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+/* Home Page Styles */
+/* Home Page Styles */
+.home-container {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-image {
+  width: 50%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-title {
+
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2b2d42;
+}
+
+.home-description {
+  font-size: 1.2rem;
+  color: #4f5d75;
+  margin: 20px 0;
+}
+
+.card {
+  background-color: #b2dbf6;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card-description {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.start-button {
+  background-color: #4b16f8;
+  color: rgb(13, 13, 13);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover {
+  background-color: #e72f88;
+}
